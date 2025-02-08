@@ -15,4 +15,4 @@ next_year_age = age + 1
 height_in_cm = height * 30.48  # Converting feet to cm
 
 print("\nNext year,", name, "will be", next_year_age, "years old.")
-print("Height in centimeters:", height_in_cm, "cm")
+print(f"Height in centimeters: {height_in_cm} cm")
