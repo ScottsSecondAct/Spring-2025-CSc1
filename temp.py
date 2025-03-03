@@ -1,0 +1,1 @@
+print("{name} is a {year}rd year student studying {major}")
