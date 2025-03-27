@@ -15,19 +15,17 @@
     />
   </head>
   <body class="bg-gray-100 p-4">
-        <header class="bg-gray-200 text-gray-800 py-4">
-
-
-    <nav class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-6 flex justify-between items-center">
-        <h1 class="text-xl font-semibold">Homer Simpson</h1>
-        <ul class="flex space-x-4">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="about.html" class="hover:underline">About</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="bg-gray-200 text-gray-800 py-4">
+      <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+          <h1 class="text-xl font-semibold">Homer Simpson</h1>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <img
         src="./Homer_Simpson_2006.png"
@@ -36,16 +34,26 @@
       />
     </header>
 
+    <br />
+    <hr style="border-top: 5px solid black;"/>
+    <br />
     <section class="container mx-auto px-6 py-10">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h2 style ="background-color: red;" class="text-2xl font-bold mb-4">Welcome, Friends</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <projects>
+          <img
+            src="./Homer_Simpson_2006.png"
+            alt="Homer Simpson"
+            class="mx-auto mb-6"
+          />
+          <h2 style="background-color: red" class="text-2xl font-bold mb-4">
+            Welcome, Friends
+          </h2>
           <p class="text-gray-700">
             Explore my site to learn more about my background, interests, and
             recent projects.
           </p>
-        </div>
-        <div>
+        </projects>
+        <success>
           <p class="text-gray-700">
             This is a basic example showing the major sections of an HTML file.
           </p>
@@ -58,14 +66,29 @@
               <li>footer</li>
             </ul>
           </ul>
+        </success>
+        <div>
+          <h1>This is the third column</h1>
         </div>
       </div>
       <h3>End of Class</h3>
     </section>
 
+    <banana>
+      <h1>Banana</h1>
+      <p>This is a banana.</p>
+      <p>This is a second banana.</p>
+      <h2 style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif">
+        Banana heading 2
+      </h2>
+      <h3 class="groovy large center common-background">Banana heading 3</h3>
+    </banana>
+
     <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto px-6">
-        <p class="text-center">&copy; 2025 Homer Simpson. All rights reserved.</p>
+        <p class="text-center">
+          &copy; 2025 Homer Simpson. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
