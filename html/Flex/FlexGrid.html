@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .flex-item {
+        background-color: #ccc;
+        padding: 20px;
+        flex: 1; /* Makes each item grow equally to fill the space */
+        text-align: center;
+      }
+            .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .grid-item {
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+      .grid-item1 {
+        grid-column: span 2; /* Span two columns */
+      }
+      @media (max-width: 600px) {
+        .flex-container {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .grid-container {
+          grid-template-columns: 1fr; /* Stack items in a single column */
+        }
+        .grid-item {
+          grid-column: span 1; /* Each item takes full width */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1
+        <h1>Bunny</h1>
+        <img src="bunny.jpg" alt="Bunny" style="width: 50%; height: auto;" />
+        <p>A cute bunny.</p>  
+      </div>
+      <div class="flex-item">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+       <div class="grid-container">
+      <div class="grid-item1">Grid Item 1</div>
+      <div class="grid-item">Grid Item 2</div>
+      <div class="grid-item">Grid Item 3</div>
+      <div class="grid-item">Grid Item 4</div>
+      <div class="grid-item">Grid Item 5
+        <h1>Donkey</h1>
+        <img src="donkey.jpg" alt="donkey" style="width: 25%; height: auto;" />
+        <p>A cute donkey.</p>
+      </div>
+      <div class=""grid-container">
+      <div class="grid-item" style="margin-left: 0; padding-left: 0;">Grid Item 5</div>
+      <div clas="grid-container">Grid Item 5</div>
+      <div class="grid-item">Grid Item 5</div>
+
+      </div>
+      <div class="grid-item">Grid Item 6</div>
+    </div>
+  </body>
+</html>

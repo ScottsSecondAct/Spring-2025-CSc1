@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        /* Horizontal row on larger screens */
+        flex-direction: row;
+        /* Allow wrapping when space is limited */
+        flex-wrap: wrap;
+        /* Distribute space around items */
+        justify-content: space-around;
+        /* Center items vertically in the container */
+        align-items: center;
+        /* Spacing between items */
+        gap: 10px;
+        /* Background & padding for demo */
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .flex-item {
+        /* Initial size is 200px, can grow or shrink */
+        flex: 1 1 200px;
+        background-color: lightskyblue;
+        padding: 20px;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .flex-container {
+          /* Stack items vertically on small screens */
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">Item 1: Now is the time for all good men to come to the aid of their country</div>
+      <div class="flex-item">Item 2: The quick red fox jumped over the laze brown dog.</div>
+      <div class="flex-item">
+        <h2>Item 3</h2>
+        <img src="bunny.jpg" alt="Bunny" style="width: 100%; height: auto;" />
+        <p>A cute bunny.</p>
+      </div>
+    </div>
+  </body>
+</html>

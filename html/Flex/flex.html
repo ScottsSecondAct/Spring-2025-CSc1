@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .flex-item {
+        background-color: #ccc;
+        padding: 20px;
+        flex: 1; /* Makes each item grow equally to fill the space */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <h1>Bunny</h1>
+        <img src="bunny.jpg" alt="Bunny" style="width: 100%; height: auto;" />
+        <p>A cute bunny.</p>
+      </div>
+      <div class="flex-item">
+        <h2>Item 2</h2>
+        <p>Some content for item 2.</p>
+      </div>
+      <div class="flex-item">Item 3</div>
+    </div>
+  </body>
+</html>
