@@ -1,3 +1,6 @@
+# # Communications Use Case: media influence may want to understand how different post types perform
+# on social media in terms of likes, comments, and shares.
+#
 # This script analyzes social media engagement data, calculates total engagement,
 # and visualizes the results using bar plots and heatmaps.
 
